@@ -126,6 +126,7 @@ def main():
         trip_duration(df)
         user_info(df,city)
 	displaying(df)
+	
         another_analysis = input('would you like another analysis yes or no ')
         if another_analysis.lower() != 'yes':
             break
