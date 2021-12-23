@@ -123,7 +123,7 @@ def main():
         popular_station(df)
         trip_duration(df)
         user_info(df,city)
-        diplaying(df)
+        displaying(df)
         another_analysis = input('would you like another analysis yes or no ')
         if another_analysis.lower() != 'yes':
             break
