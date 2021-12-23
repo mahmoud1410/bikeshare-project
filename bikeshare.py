@@ -1,3 +1,6 @@
+import time
+import pandas as pd
+import numpy as np
 data_of_city={'chicago':'chicago.csv',
              'new york city':'new_york_city.csv',
              'washington':'washington.csv'}
@@ -99,7 +102,7 @@ def user_info(df,city):
         print('the earliest year is {}'.format(early_year))
         print("\nThis took %s seconds." % (time.time() - starting_time))
         print('-'*100)
-def the_function():
+def main():
     while True:
         
         city,selected_month,selected_day=filteration()
@@ -111,5 +114,6 @@ def the_function():
         another_analysis = input('would you like another analysis yes or no ')
         if another_analysis.lower() != 'yes':
             break
- the_function()       
+if __name__ == "__main__":
+	main()  
            
