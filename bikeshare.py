@@ -102,6 +102,18 @@ def user_info(df,city):
         print('the earliest year is {}'.format(early_year))
         print("\nThis took %s seconds." % (time.time() - starting_time))
         print('-'*100)
+def displaying(df):
+    """Displaying 5 raws at a time ."""
+
+    data_displaying = input('\nWould you like to see 5 rows of raw data? yes or no:\n').lower()
+    if data_displaying != 'no':
+        z = 0
+        while (z < df['Start Time'].count() and data_displaying != 'no'):
+            print(df.iloc[z:z+5])
+            z += 5
+            more = input('\nWould you like to see 5 more rows of data? yes or no:\n').lower()
+            if more != 'yes':
+                break
 def main():
     while True:
         
@@ -111,6 +123,7 @@ def main():
         popular_station(df)
         trip_duration(df)
         user_info(df,city)
+	displaying(df)
         another_analysis = input('would you like another analysis yes or no ')
         if another_analysis.lower() != 'yes':
             break
