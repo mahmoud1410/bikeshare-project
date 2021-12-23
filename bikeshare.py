@@ -114,8 +114,7 @@ def displaying(df):
             z += 5
             more = input('\nWould you like to see 5 more rows of data? yes or no:\n').lower()
             if more != 'yes':
-                break
-                
+                break              
 def main():
     while True:
         
@@ -126,7 +125,6 @@ def main():
         trip_duration(df)
         user_info(df,city)
 	diplaying(df)
-	
         another_analysis = input('would you like another analysis yes or no ')
         if another_analysis.lower() != 'yes':
             break
