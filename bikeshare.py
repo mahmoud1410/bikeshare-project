@@ -117,7 +117,6 @@ def displaying(df):
                 break              
 def main():
     while True:
-        
         city,selected_month,selected_day=filteration()
         df=loading(city,selected_month,selected_day)
         popular_time(df)
