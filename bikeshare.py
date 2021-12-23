@@ -86,6 +86,7 @@ def trip_duration(df):
     print("\nThis took %s seconds." % (time.time() - starting_time))
     print('-'*100)
 def user_info(df,city):
+	
     starting_time = time.time()
     print('now we will display some information about the users')
     print('user type is :')
@@ -114,6 +115,7 @@ def displaying(df):
             more = input('\nWould you like to see 5 more rows of data? yes or no:\n').lower()
             if more != 'yes':
                 break
+                
 def main():
     while True:
         
